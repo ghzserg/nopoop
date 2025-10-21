@@ -8,9 +8,18 @@
 
 1. Установите zMod: https://github.com/ghzserg/zmod
 2. Отключите встроенный экран (вы всё равно можете использовать сенсорный экран, просто это будет не интерфейс Flashforge; zMod предлагает GuppyScreen в качестве альтернативы).
-3. Загрузите изменённые файлы [filament.json](https://github.com/ghzserg/zmod/blob/main/ninjamida/filament.json) и [user-nopoop-ru.cfg](https://github.com/ghzserg/zmod/blob/main/ninjamida/user-nopoop-ru.cfg) в папку mod_data (при доступе по SSH: загрузите в /root/).
-4. Добавьте следующую строку в КОНЕЦ файла `user.cfg` (скобки включены): ```[include user-nopoop-ru.cfg]```
-5. Перезагрузите принтер.
+3. Загрузите изменённые файлы [filament.json](https://github.com/ghzserg/nopoop/blob/master/filament.json) в папку `mod_data` (при доступе по SSH: загрузите в `/root/`).
+4. В файле ```mod_data/user.moonraker.conf``` добавьте секцию:
+```ini
+[update_manager nopoop]
+type: git_repo
+channel: dev
+path: /root/printer_data/config/mod_data/plugins/nopoop
+origin: https://github.com/ghzserg/nopoop.git
+is_system_service: False
+primary_branch: master
+```
+5. Выполните команду: ```ENABLE_PLUGIN name=nopoop``
 6. Измените настройки слайсера, как описано ниже.
 7. Выполните команду: ```SAVE_ZMOD_DATA use_trash_on_print=0```
 
