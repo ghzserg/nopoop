@@ -30,6 +30,21 @@ primary_branch: master
 
 ---
 
+## Управление плагином
+
+**Включить плагин:**
+```gcode
+ENABLE_PLUGIN name=nopoop
+```
+— скачает плагин и перезапустит Klipper при успехе.
+
+**Выключить плагин:**
+```gcode
+DISABLE_PLUGIN name=nopoop
+```
+
+---
+
 ## Структура плагина
 
 ### Одноязычный плагин  
@@ -55,7 +70,7 @@ RESPOND PREFIX="info" MSG="===Cutting the filament==="
 
 ---
 
-## Перевод
+#### Перевод
 
 Переводы хранятся в каталоге `translate/` в файлах вида `de.csv`:
 
@@ -73,18 +88,3 @@ Cutting the filament;Filament schneiden
 ./Make.sh
 ```
 Скрипт создаст нужные каталоги и `.cfg`-файлы.
-
----
-
-## Управление плагином
-
-**Включить плагин:**
-```gcode
-ENABLE_PLUGIN name=nopoop
-```
-— скачает плагин и перезапустит Klipper при успехе.
-
-**Выключить плагин:**
-```gcode
-DISABLE_PLUGIN name=nopoop
-```

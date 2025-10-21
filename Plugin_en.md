@@ -30,6 +30,21 @@ primary_branch: master
 
 ---
 
+## Plugin Management
+
+**Enable plugin:**
+```gcode
+ENABLE_PLUGIN name=nopoop
+```
+— Downloads the plugin and restarts Klipper if successful.
+
+**Disable plugin:**
+```gcode
+DISABLE_PLUGIN name=nopoop
+```
+
+---
+
 ## Plugin Structure
 
 ### Single-language plugin  
@@ -55,7 +70,7 @@ RESPOND PREFIX="info" MSG="===Cutting the filament==="
 
 ---
 
-## Translations
+#### Translations
 
 Translations are stored in the `translate/` directory in files like `de.csv`:
 
@@ -73,18 +88,3 @@ To generate language files, run:
 ./Make.sh
 ```
 This script will create the required directories and `.cfg` files.
-
----
-
-## Plugin Management
-
-**Enable plugin:**
-```gcode
-ENABLE_PLUGIN name=nopoop
-```
-— Downloads the plugin and restarts Klipper if successful.
-
-**Disable plugin:**
-```gcode
-DISABLE_PLUGIN name=nopoop
-```
