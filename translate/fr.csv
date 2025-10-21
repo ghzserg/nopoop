@@ -1,0 +1,6 @@
+Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Chargement du filament à {extruder_temp}°C pour {extrude_len}mm à {speed/60} mm/s
+Cutting the filament;Couper le filament
+Loading filament;Charger le filament
+Heating the nozzle to {extruder_temp} degrees;Chauffer la buse à {extruder_temp} degrés
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Déposer le filament {filament_drop_length} + {filament_drop_length_add}. Vitesse {filament_load_speed}
+Extracting filament from the extruder;Extraire le filament de l'extrudeuse

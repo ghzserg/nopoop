@@ -1,0 +1,6 @@
+Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;{extruder_temp}°C에서 {speed/60}mm/s 속도로 {extrude_len}mm 필라멘트 로드
+Cutting the filament;필라멘트 절단
+Loading filament;필라멘트 로딩
+Heating the nozzle to {extruder_temp} degrees;노즐을 {extruder_temp}도로 가열
+Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};필라멘트 배출 {filament_drop_length} + {filament_drop_length_add}. 속도 {filament_load_speed}
+Extracting filament from the extruder;익스트루더에서 필라멘트 추출
