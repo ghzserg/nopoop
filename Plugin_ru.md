@@ -2,15 +2,15 @@
 
 Любой пользователь может создать и подключить свой плагин к **zmod**.
 
-Пример плагина: https://github.com/ghzserg/nopoop  
+Пример плагина: https://github.com/ghzserg/nopoop
 (Во всех примерах ниже используется имя `nopoop` — замените его на имя вашего плагина.)
 
 ---
 
 ## Добавление плагина
 
-В файле  
-```mod_data/user.moonraker.conf```  
+В файле
+```mod_data/user.moonraker.conf```
 добавьте секцию:
 
 ```ini
@@ -23,7 +23,7 @@ is_system_service: False
 primary_branch: master
 ```
 
-- **Путь к плагину**: `/root/printer_data/config/mod_data/plugins/nopoop`  
+- **Путь к плагину**: `/root/printer_data/config/mod_data/plugins/nopoop`
 - **Источник**: `https://github.com/ghzserg/nopoop.git`
 
 > Стабильные плагины могут быть включены в поставку zmod, но обновляются и управляются их авторами.
@@ -47,15 +47,21 @@ DISABLE_PLUGIN name=nopoop
 
 ## Структура плагина
 
-### Одноязычный плагин  
-Должен содержать файл:  
+### Скрипт установки
+
+После вызова `ENABLE_PLUGIN`, будет автоматически вызыван файл install.sh
+
+После вызова `DISABLE_PLUGIN`, будет автоматически вызыван файл uninstall.sh
+
+### Одноязычный плагин
+Должен содержать файл:
 ```
 nopoop.cfg
 ```
 В нём — весь функционал.
 
-### Многоязычный плагин  
-Файлы размещаются в подкаталогах по языкам:  
+### Многоязычный плагин
+Файлы размещаются в подкаталогах по языкам:
 ```
 en/nopoop.cfg
 ru/nopoop.cfg
@@ -63,7 +69,7 @@ de/nopoop.cfg
 ...
 ```
 
-Все строки вывода должны быть экранированы, например:  
+Все строки вывода должны быть экранированы, например:
 ```gcode
 RESPOND PREFIX="info" MSG="===Cutting the filament==="
 ```
@@ -78,7 +84,7 @@ RESPOND PREFIX="info" MSG="===Cutting the filament==="
 Cutting the filament;Filament schneiden
 ```
 
-Формат:  
+Формат:
 ```
 Английская фраза;Перевод на нужный язык
 ```

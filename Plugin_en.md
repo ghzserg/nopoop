@@ -2,15 +2,15 @@
 
 Any user can create their own plugin and integrate it into **zmod**.
 
-Plugin example: https://github.com/ghzserg/nopoop  
+Plugin example: https://github.com/ghzserg/nopoop
 (Throughout the examples below, the plugin name `nopoop` is used — replace it with your own plugin name as needed.)
 
 ---
 
 ## Adding a Plugin
 
-In the file  
-```mod_data/user.moonraker.conf```  
+In the file
+```mod_data/user.moonraker.conf```
 add the following section:
 
 ```ini
@@ -47,15 +47,21 @@ DISABLE_PLUGIN name=nopoop
 
 ## Plugin Structure
 
-### Single-language plugin  
-Must contain a file:  
+### Installation Script
+
+After calling `ENABLE_PLUGIN`, the install.sh file will be automatically executed.
+
+After calling `DISABLE_PLUGIN`, the uninstall.sh file will be automatically executed.
+
+### Single-language plugin
+Must contain a file:
 ```
 nopoop.cfg
 ```
 All functionality resides in this file.
 
-### Multi-language plugin  
-Language-specific files are placed in subdirectories:  
+### Multi-language plugin
+Language-specific files are placed in subdirectories:
 ```
 en/nopoop.cfg
 ru/nopoop.cfg
@@ -63,7 +69,7 @@ de/nopoop.cfg
 ...
 ```
 
-All output messages must be escaped, for example:  
+All output messages must be escaped, for example:
 ```gcode
 RESPOND PREFIX="info" MSG="===Cutting the filament==="
 ```
@@ -78,7 +84,7 @@ Translations are stored in the `translate/` directory in files like `de.csv`:
 Cutting the filament;Filament schneiden
 ```
 
-Format:  
+Format:
 ```
 English phrase;Translated phrase
 ```
