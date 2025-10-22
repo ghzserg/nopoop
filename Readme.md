@@ -4,8 +4,7 @@ To use this mod for your Flashforge AD5X (it likely won't work with, and at any 
 
 1. Install zMod: https://github.com/ghzserg/zmod
 2. Disable the native screen (you can still have a touchscreen interface, it just won't be Flashforge's one; zMod offers GuppyScreen as an alternative)
-3. Upload the customized [filament.json](https://github.com/ghzserg/nopoop/blob/master/filament.json) to your `mod_data` folder (if accessing via SSH: upload to `/root/`)
-4. In the file ```mod_data/user.moonraker.conf``` add the following section:
+3. In the file ```mod_data/user.moonraker.conf``` add the following section:
 ```ini
 [update_manager nopoop]
 type: git_repo
@@ -15,9 +14,9 @@ origin: https://github.com/ghzserg/nopoop.git
 is_system_service: False
 primary_branch: master
 ```
-5. Run this command: ```ENABLE_PLUGIN name=nopoop```
-6. Modify your slicer settings as described below
-7. Run this command: ```SAVE_ZMOD_DATA use_trash_on_print=0```
+4. Run this command: ```ENABLE_PLUGIN name=nopoop```
+5. Modify your slicer settings as described below
+6. Run this command: ```SAVE_ZMOD_DATA use_trash_on_print=0```
 
 If these instructions do not make sense to you, please reconsider whether you want to use this highly experimental mod. It is best suited for those who already know their way around modding and customizing their 3D printers, and are willing to take some risks. With that being said, if you are not at that level yet but you really want to learn, there will always be people willing to offer help on various online forums - just be sure to explain very clearly what's going wrong or what part you're struggling to understand etc, and if relevant, try to provide screenshots / photos of your issue. The more information you can provide, the better people can help you.
 
