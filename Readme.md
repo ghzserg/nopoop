@@ -3,18 +3,8 @@ Author: https://github.com/ninjamida
 To use this mod for your Flashforge AD5X (it likely won't work with, and at any rate is useless for, the AD5M and AD5M Pro):
 
 1. Install zMod: https://github.com/ghzserg/zmod
-2. In the file ```mod_data/user.moonraker.conf``` add the following section:
-```ini
-[update_manager nopoop]
-type: git_repo
-channel: dev
-path: /root/printer_data/config/mod_data/plugins/nopoop
-origin: https://github.com/ghzserg/nopoop.git
-is_system_service: False
-primary_branch: master
-```
-3. Run this command: ```ENABLE_PLUGIN name=nopoop```
-4. Modify your slicer settings as described below
+2. Run this command: ```ENABLE_PLUGIN name=nopoop```
+3. Modify your slicer settings as described below
 
 If these instructions do not make sense to you, please reconsider whether you want to use this highly experimental mod. It is best suited for those who already know their way around modding and customizing their 3D printers, and are willing to take some risks. With that being said, if you are not at that level yet but you really want to learn, there will always be people willing to offer help on various online forums - just be sure to explain very clearly what's going wrong or what part you're struggling to understand etc, and if relevant, try to provide screenshots / photos of your issue. The more information you can provide, the better people can help you.
 
