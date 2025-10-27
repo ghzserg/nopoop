@@ -20,9 +20,7 @@ Overridden macros:
 
 This mod overrides the following macros. If you have your own customizations to these, you will need to manually merge them with this mod's customizations. The versions currently present are based on the versions from zMod 1.6.1-146-g09bb977e.
   END_CHANGE_FILAMENT
-  _IFS_REMOVE_PRUTOK
   _INSERT_PRUTOK_IFS
-  _REZGEM_PRUTOK
   _SBROS_TRASH_DAVIM
 
 ---
