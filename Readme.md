@@ -10,8 +10,7 @@ If these instructions do not make sense to you, please reconsider whether you wa
 
 Also - don't throw the poop bucket / chute away just yet. This eliminates poops DURING printing; it does not eliminate poops *before* a print (you'll get either one or three prior to a print, depending on whether a color change is needed), nor when loading colors through the menu while not printing.
 
-If use_trash_on_print is set back to 1, behavior will be ALMOST like vanilla zMod, with two differences:
-- Pause time when pooping after activating the fan is 4000ms, not 3000ms.
+If use_trash_on_print is set back to 1, behavior will be ALMOST like vanilla zMod, with one different:
 - When restoring the print head position after pooping, the print head first returns to the correct XY position, then only after that, returns to the Z position.
 
 ---
