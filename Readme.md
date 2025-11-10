@@ -1,6 +1,6 @@
 Author: https://github.com/ninjamida
 
-To use this mod for your Flashforge AD5X (it likely won't work with, and at any rate is useless for, the AD5M and AD5M Pro):
+To use this plugin for your Flashforge AD5X (it likely won't work with, and at any rate is useless for, the AD5M and AD5M Pro):
 
 1. Install zMod: https://github.com/ghzserg/zmod
 2. Run this command: ```ENABLE_PLUGIN name=nopoop```
@@ -10,16 +10,13 @@ If these instructions do not make sense to you, please reconsider whether you wa
 
 Also - don't throw the poop bucket / chute away just yet. This eliminates poops DURING printing; it does not eliminate poops *before* a print (you'll get either one or three prior to a print, depending on whether a color change is needed), nor when loading colors through the menu while not printing.
 
-If use_trash_on_print is set back to 1, behavior will be ALMOST like vanilla zMod
+Installing the plugin downloads the modified ```filament.json``` and enables the ```SAVE_ZMOD_DATA parameter use_trash_on_print=0```
 
 ---
 
 Overridden macros:
 
-This mod overrides the following macros. If you have your own customizations to these, you will need to manually merge them with this mod's customizations. The versions currently present are based on the versions from zMod 1.6.1-146-g09bb977e.
-- _INSERT_PRUTOK_IFS
-- _SBROS_TRASH_DAVIM
-
+The plugin code is fully integrated into the main ZMOD code for the SAVE_ZMOD_DATA mode, use_trash_on_print=0
 ---
 
 ### Slicer settings:
