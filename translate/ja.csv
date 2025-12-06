@@ -1,6 +1,1 @@
-Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;{extruder_temp}℃で{speed/60}mm/sの速度で{extrude_len}mmのフィラメントを装填
-Cutting the filament;フィラメントを切断
-Loading filament;フィラメントをロード
-Heating the nozzle to {extruder_temp} degrees;ノズルを{extruder_temp}度に加熱
-Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};フィラメントを排出 {filament_drop_length} + {filament_drop_length_add}. 速度 {filament_load_speed}
-Extracting filament from the extruder;エクストルーダからフィラメントを抽出
+The plugin code is fully integrated into the main ZMOD code for the SAVE_ZMOD_DATA mode, use_trash_on_print=0;プラグインコードはSAVE_ZMOD_DATAモード用にメインZMODコードに完全に統合されています、use_trash_on_print=0

@@ -1,6 +1,1 @@
-Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;Caricamento del filamento a {extruder_temp} per {extrude_len}mm a {speed/60} mm/s
-Cutting the filament;Tagliare il filamento
-Loading filament;Caricare il filamento
-Heating the nozzle to {extruder_temp} degrees;Riscaldare l'ugello a {extruder_temp} gradi
-Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};Depositare il filamento {filament_drop_length} + {filament_drop_length_add}. Velocità {filament_load_speed}
-Extracting filament from the extruder;Estrarre il filamento dall'estrusore
+The plugin code is fully integrated into the main ZMOD code for the SAVE_ZMOD_DATA mode, use_trash_on_print=0;Il codice del plugin è completamente integrato nel codice principale di ZMOD per la modalità SAVE_ZMOD_DATA, use_trash_on_print=0

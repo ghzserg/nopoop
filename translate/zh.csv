@@ -1,6 +1,1 @@
-Loading filament at {extruder_temp} for {extrude_len}mm at {speed/60} mm/s;正在以{extruder_temp}℃加载{extrude_len}毫米耗材，速度{speed/60}毫米/秒
-Cutting the filament;切断耗材
-Loading filament;装载耗材
-Heating the nozzle to {extruder_temp} degrees;将喷嘴加热到{extruder_temp}度
-Drop filament {filament_drop_length} + {filament_drop_length_add}. Speed {filament_load_speed};排出耗材 {filament_drop_length} + {filament_drop_length_add}. 速度 {filament_load_speed}
-Extracting filament from the extruder;从挤出机中取出耗材
+The plugin code is fully integrated into the main ZMOD code for the SAVE_ZMOD_DATA mode, use_trash_on_print=0;插件代码已完全集成到SAVE_ZMOD_DATA模式的主ZMOD代码中，use_trash_on_print=0
