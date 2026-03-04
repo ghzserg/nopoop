@@ -1,5 +1,10 @@
 Author: https://github.com/ninjamida
 
+**The information below is out of date**
+[Current documentation here](https://wiki.zmod.link/AD5X/#slicer-controlled-purge)
+
+---
+
 To use this plugin for your Flashforge AD5X (it likely won't work with, and at any rate is useless for, the AD5M and AD5M Pro):
 
 1. Install zMod: https://github.com/ghzserg/zmod
